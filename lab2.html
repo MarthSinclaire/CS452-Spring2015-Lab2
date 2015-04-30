@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+// author: Dalton Patterson
+</script>
+
+
 <script id="vertex-shader" type="x-shader/x-vertex">
 attribute vec4 vPosition;
 void
@@ -14,7 +20,7 @@ precision mediump float;
 void
 main()
 {
-gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 );
+gl_FragColor = vec4( 1.0, 0, 1.0, 1.0 );
 }
 </script>
 <script type="text/javascript" src="../Common/webgl-utils.js"></script>
@@ -23,7 +29,7 @@ gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 );
 <script type="text/javascript" src="lab2.js"></script>
 </head>
 <body>
-<canvas id="gl-canvas" width="512" height="512">
+<canvas id="gl-canvas" width="800" height="800" style="border:1px solid">
 Oops ... your browser doesn't support the HTML5 canvas element
 </canvas>
 </body>
